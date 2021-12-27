@@ -1,0 +1,7 @@
+C:\Users\miksl\source\repos\JKLMWorder\bin\Debug\JKLMWorder.exe.config
+C:\Users\miksl\source\repos\JKLMWorder\bin\Debug\JKLMWorder.exe
+C:\Users\miksl\source\repos\JKLMWorder\bin\Debug\JKLMWorder.pdb
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.csproj.AssemblyReference.cache
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.csproj.CoreCompileInputs.cache
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.exe
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.pdb
