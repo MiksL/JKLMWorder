@@ -5,3 +5,5 @@ C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.csproj.AssemblyRefer
 C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.csproj.CoreCompileInputs.cache
 C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.exe
 C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.pdb
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.Properties.Resources.resources
+C:\Users\miksl\source\repos\JKLMWorder\obj\Debug\JKLMWorder.csproj.GenerateResource.cache

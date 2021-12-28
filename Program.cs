@@ -1,5 +1,7 @@
-﻿using System;
+﻿using JKLMWorder.Properties;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +14,7 @@ namespace JKLMWorder
         [STAThread]
         static void Main(string[] args)
         {
-            string[] words = System.IO.File.ReadAllLines(@"words_alpha.txt");
+            IEnumerable<String> words = File.ReadLines(@"words_alpha.txt");
 
             while(true)
             {
@@ -29,6 +31,7 @@ namespace JKLMWorder
 
                     Console.WriteLine(test);
                     Clipboard.SetText(test);
+                    Console.WriteLine("The word has been copied to your clipboard!");
                 }
                 else
                 {
