@@ -15,6 +15,7 @@ namespace JKLMWorder
         static void Main(string[] args)
         {
             IEnumerable<String> words = File.ReadLines(@"words_alpha.txt");
+            var matchedWords = new string[5];
 
             while(true)
             {
@@ -22,15 +23,48 @@ namespace JKLMWorder
                 string syllable = Console.ReadLine();
 
                 var result = words.Where(word => word.Contains(syllable));
-
-                Random random = new Random();
                 int results = result.Count();
+
                 if (results > 0)
                 {
-                    var test = result.ElementAt(random.Next(0, results));
+                    Random random = new Random();
 
-                    Console.WriteLine(test);
-                    Clipboard.SetText(test);
+                    int uniqueResults = 5;
+                    if(results < 5)
+                    {
+                        uniqueResults = results;
+                    }
+                    else
+                    {
+                        Console.WriteLine(results);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            matchedWords[i] = result.ElementAt(random.Next(0, results));
+                            Console.WriteLine(i+1 + ". " + matchedWords[i]);
+                        }
+                    }
+                    string chosenWord = "";
+                    Console.WriteLine("Choose the word to copy to your clipboard!");
+                    string inputKey = Console.ReadLine();
+                    switch(inputKey)
+                    {
+                        case "1":
+                            chosenWord = matchedWords[0];
+                            break;
+                        case "2":
+                            chosenWord = matchedWords[1];
+                            break;
+                        case "3":
+                            chosenWord = matchedWords[2];
+                            break;
+                        case "4":
+                            chosenWord = matchedWords[3];
+                            break;
+                        case "5":
+                            chosenWord = matchedWords[4];
+                            break;
+                    }
+                    Clipboard.SetText(chosenWord);
                     Console.WriteLine("The word has been copied to your clipboard!");
                 }
                 else
