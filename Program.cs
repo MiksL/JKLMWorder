@@ -14,7 +14,8 @@ namespace JKLMWorder
         [STAThread]
         static void Main(string[] args)
         {
-            IEnumerable<String> words = File.ReadLines(@"words_alpha.txt");
+            var words = Resources.words_alpha
+            .Split(new[] { Environment.NewLine }, StringSplitOptions.None);
             var matchedWords = new string[5];
 
             while(true)
