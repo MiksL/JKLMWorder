@@ -1,9 +1,0 @@
-C:\Users\miksl\source\repos\JKLMWorder\bin\Release\JKLMWorder.exe.config
-C:\Users\miksl\source\repos\JKLMWorder\bin\Release\JKLMWorder.exe
-C:\Users\miksl\source\repos\JKLMWorder\bin\Release\JKLMWorder.pdb
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.csproj.AssemblyReference.cache
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.Properties.Resources.resources
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.csproj.GenerateResource.cache
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.csproj.CoreCompileInputs.cache
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.exe
-C:\Users\miksl\source\repos\JKLMWorder\obj\Release\JKLMWorder.pdb
