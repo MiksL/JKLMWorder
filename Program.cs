@@ -46,26 +46,35 @@ namespace JKLMWorder
                     string chosenWord = "";
                     Console.WriteLine("Choose the word to copy to your clipboard!");
                     string inputKey = Console.ReadLine();
-                    switch(inputKey)
+                    try
                     {
-                        case "1":
-                            chosenWord = matchedWords[0];
-                            break;
-                        case "2":
-                            chosenWord = matchedWords[1];
-                            break;
-                        case "3":
-                            chosenWord = matchedWords[2];
-                            break;
-                        case "4":
-                            chosenWord = matchedWords[3];
-                            break;
-                        case "5":
-                            chosenWord = matchedWords[4];
-                            break;
+                        switch (inputKey)
+                        {
+                            case "1":
+                                chosenWord = matchedWords[0];
+                                break;
+                            case "2":
+                                chosenWord = matchedWords[1];
+                                break;
+                            case "3":
+                                chosenWord = matchedWords[2];
+                                break;
+                            case "4":
+                                chosenWord = matchedWords[3];
+                                break;
+                            case "5":
+                                chosenWord = matchedWords[4];
+                                break;
+                            default:
+                                break;
+                        }
+                        Clipboard.SetText(chosenWord);
+                        Console.WriteLine("The word has been copied to your clipboard!");
                     }
-                    Clipboard.SetText(chosenWord);
-                    Console.WriteLine("The word has been copied to your clipboard!");
+                    catch(Exception)
+                    {
+                        Console.WriteLine("Invalid word selected!");
+                    }
                 }
                 else
                 {
