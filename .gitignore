@@ -400,3 +400,6 @@ FodyWeavers.xsd
 # Added auto-modifying files
 JKLMWorder.csproj.FileListAbsolute.txt
 *.suo
+obj/**
+bin/**
+obj/Release/JKLMWorder.csproj.FileListAbsolute.txt
